@@ -1,0 +1,401 @@
+        /*HOME avec canva logo et liens */
+
+/*#outer {
+     font-family: 'Oswald', sans-serif;
+     font-size: 1.5em;
+     font-weight: 300;
+     background: url(../img/Blurred2.jpg) no-repeat center fixed;
+     -webkit-background-size: cover;
+     -moz-background-size: cover;
+     -o-background-size: cover;
+     background-size: cover;
+     z-index: 10;
+     width: 100%;
+     height: 100%;
+     position: absolute;
+     top: 0;
+     left: 0;
+ }*/
+ 
+/*#content {
+     height: 400px;
+     max-width: 1700px;
+     margin: auto;
+     color: #fff;
+     position: relative;
+     top: 50%;
+     transform: translateY(-50%);
+     text-align: center;
+ }
+
+.logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    align-content: center;
+}*/
+
+#defaultCanvas0 {
+    width: 100%!important;
+    height: 78%!important;
+    position: relative;
+    z-index: 11;
+    left: 0;
+    right: 0;
+    
+}
+ 
+        /* FLEXBOX ET LIENS POUR LE MENU LIENS*/
+
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,700);
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+.site-header {
+  display: flex;
+  align-items: center;
+  background: #0D1313;
+  color: white;
+  @media (max-width: 600px) {
+    flex-wrap: wrap;
+    .site-nav {
+      background: #222;
+      order: 2;
+      flex-basis: 100%;
+      a {
+        font-size: 1rem;
+      }
+    }
+    .account-actions {
+      margin-left: auto;
+    }
+  }
+}
+
+.logo {
+  color: white;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 2px;
+  padding: 10px 20px;
+}
+
+.site-nav {
+  text-align: center;
+  flex: 1;
+  > ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: inline-flex;
+  }
+  .active {
+    a {
+      background: darken(#5DCCAF, 40%);
+      color: #5DCCAF;
+    }
+  }
+  a {
+    color: #E2E6E7;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 20px;
+    display: inline-block;
+    font-size: 1.3rem;
+    font-weight: bold;
+  }
+}
+
+.account-actions {
+  display: flex;
+  align-items: center;
+  padding-right: 10px;
+}
+.account-dropdown {
+  margin-right: 10px;
+  > ul {
+    display: none;
+  }
+}
+.sign-out-link {
+  color: #E2E6E7;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+}
+
+/*.menu {
+    height: 45vh; 
+    display: -webkit-flex;
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    align-items: flex-end;
+    margin-left: -100px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #fff;
+    position: absolute;
+} 
+
+.hamburger {
+    display: none;
+}
+
+@media screen and (max-width: 993px) {
+    .menu {
+    height: 45vh; 
+    display: -webkit-flex;
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    align-items: flex-end;
+    margin-left: -100px;
+}
+    .menu a {
+        height: 45vh;
+    }
+    .hamburger {
+        display: block;
+        position: absolute;
+        top: 25px;
+        right: 10px;
+    }
+    .hamburger-close {
+        display: none;
+    }
+    #header:target .hamburger-close {
+        display: inline;
+    }
+    #main-header:target .hamburger-open {
+        display: none;
+    }
+    .menu {
+        max-height: 0;
+        overflow: hidden;
+        transition: max-heigth 400ms ease-in-out;
+    }
+    #header:target .menu {
+        max-height: 400px;
+    }
+}*/
+        /*PARTIE PROFIL*/
+
+#Profil {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    position: absolute;
+    top: 90%;
+    height: 100vh;
+    vertical-align: center;
+}
+
+        /*PARTIE FORMATION/EXPERIENCE */
+
+#Formexp {
+    right: 0;
+    left: 0;
+    background: url(../img/Blurred3.jpg) no-repeat center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    color: #fff;
+    position: absolute;
+    z-index: 15;
+    top: 200%;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    align-content: space-around;
+    justify-content: flex-start;
+}
+
+
+#Formation {
+    display: flex;
+    flex-direction: column;
+    vertical-align: middle;
+    width: 50%;
+    z-index: 17;
+}
+
+#Experience {
+    display: flex;
+    flex-direction: column;
+    vertical-align: middle;
+    width: 50%;
+    z-index: 17;
+}
+
+.noTransparence {
+    display: flex;
+    flex-direction: column;
+    vertical-align: middle;
+    width: 50%;
+    background-color: darkgray;
+    opacity: 100;
+    position: absolute;
+    z-index: 16;
+/*    margin: 30px;*/
+}
+
+        /*TEXTE EN GENERAL*/
+
+.titre {
+    font-family: 'Dragon is coming';
+    font-size: 6em;
+    font-weight: normal;
+    margin : 0;
+    text-align: center;
+}
+
+.titre2 {
+    font-family: 'Dragon is coming';
+    font-size: 6em;
+    font-weight: normal;
+    text-align: center;
+}
+
+.text {
+    font-family: 'Raleway', sans-serif;
+    font-weight: normal;
+    margin-left: 300px;
+    margin-right: 300px;
+    text-indent: 60px;
+    text-align: justify;
+    line-height: 130%;
+}
+
+.textNoInd {
+    font-family: 'Raleway', sans-serif;
+    font-weight: normal;
+    margin-left: 70px;
+    margin-right: 70px;
+    text-align: justify;
+    line-height: 140%;
+}
+
+.textNoInd2 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: normal;
+    margin-left: 270px;
+    margin-right: 270px;
+    text-align: center;
+    line-height: 140%;
+    flex : 1;
+}
+
+.legend {
+/*    margin-top: 200px;*/
+    font-family: 'Raleway', sans-serif;
+    font-weight: normal;
+    text-align: center;
+    line-height: 130%;
+/*    width :335px;*/
+}
+
+.textitre {
+    font-family: 'Raleway', sans-serif;
+    font-weight: normal;
+    text-indent: 60px;
+    text-align: justify;
+    line-height: 130%;
+}
+
+.text3 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: normal;
+    text-align: center;
+    margin-left: 150px;
+    margin-right: 150px;
+    line-height: 130%;
+}
+
+.text3 a {
+    text-decoration: none;
+    color: #fff;
+    position: relative;
+}
+
+#Gallery {
+    right: 0;
+    left: 0;
+    background-color: white;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    color: black;
+    position: absolute;
+    z-index: 15;
+    top: 300%;
+/*    height: 200vh;*/
+}
+
+#Projets {
+    display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+    flex-flow: row wrap;
+	justify-content: space-around;
+	align-items: center;
+	align-content: space-around;
+/*    margin-left: 10vh;*/
+}
+
+#Projets div {
+    margin: auto;
+}
+
+#Projets div.One {
+    margin: auto;
+    flex: auto;
+    max-width: 334.4px;
+    margin: 30px;
+    align-items: center;
+}
+
+#Projets div a img {
+    margin: auto;
+    position: relative;
+    height: 188px;
+    -webkit-transition: all 1s ease; /* Safari et Chrome */
+    -moz-transition: all 1s ease; /* Firefox */
+    -ms-transition: all 1s ease; /* Internet Explorer 9 */
+    -o-transition: all 1s ease; /* Opera */
+    transition: all 1s ease;
+    border: 1px solid darkgrey;
+}
+
+#Projets div:hover a img {
+/* L'image est grossie de 2
+    15% */
+-webkit-transform:scale(1.15); /* Safari et Chrome */
+-moz-transform:scale(1.15); /* Firefox */
+-ms-transform:scale(1.15); /* Internet Explorer 9 */
+-o-transform:scale(1.15); /* Opera */
+transform:scale(1.15);
+}
+
+/*TAP TAUPE SANS TAUPE EN FLASH SANS FLASH*/
+#jeu {
+            display: flex;
+            flex-direction: row;
+            align-content: center;
+            align-items: center;
+        }
+
+#video {
+            display: flex;
+            flex-direction: column;
+            align-content: center;
+            align-items: center;
+            margin-top: 5vh;
+        }
+
+        
